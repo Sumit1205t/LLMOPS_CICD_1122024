@@ -1,6 +1,10 @@
-import pytest
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from calculator.calculator import Calculator
 import math
+import pytest
 
 class TestCalculator:
     @pytest.fixture
